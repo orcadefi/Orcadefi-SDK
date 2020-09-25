@@ -1,5 +1,5 @@
 # Orcadefi-SDK
-![OrcaDeFI](https://pbs.twimg.com/media/EhN6muwXcAERept?format=jpg&name=medium)
+![OrcaDeFI](https://orcadefi.github.io/assets/images/bg-orca-61c0accc9bc1e442c046cf0707d3e7b9.png)
 A simple SDK to use the orcadefi platform
 
 Features:
