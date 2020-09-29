@@ -1,0 +1,26 @@
+{
+  "name": "orcadefi-sdk",
+  "version": "1.0.0",
+  "description": "Orca DeFi Javascript SDK",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orcadefi/Orcadefi-SDK.git"
+  },
+  "keywords": [
+    "Orca",
+    "DeFI"
+  ],
+  "author": "Orca DeFi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/orcadefi/Orcadefi-SDK/issues"
+  },
+  "homepage": "https://github.com/orcadefi/Orcadefi-SDK#readme",
+  "dependencies": {
+    "axios": "^0.20.0"
+  }
+}

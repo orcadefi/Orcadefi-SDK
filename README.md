@@ -16,3 +16,22 @@ Orca DeFi uses an API for show the real-time data of APR oracles of lend/borrow 
 ## Routes
 
 All routes are use the /api/v1/
+
+**login**
+```
+http://orcadefi.com/api/v1/login
+```
+Generates a token for access to all routes that need authorization
+
+**refreshToken**
+```
+http://orcadefi.com/api/v1/refresh
+```
+Generates a new token when the token expires in the 72 hours that is the duration.
+
+**getAllData**
+```
+http://orcadefi.comapi/v1/realtime/all
+```
+Retrieves information from all pairs and platforms in real time by organizing information by platform
+
