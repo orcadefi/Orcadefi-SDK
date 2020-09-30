@@ -1,8 +1,8 @@
 var axios = require('axios');
-var token = ""
+var token = '...';
 var config = {
   method: 'get',
-  url: 'http://orcadefi.com/api/v1/realtime/all',
+  url: 'http://orcadefi.com/api/v1/realtime/aave/lend',
   headers: {
     'Authorization': 'Bearer ' + token
   }

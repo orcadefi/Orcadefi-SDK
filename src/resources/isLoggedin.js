@@ -1,11 +1,13 @@
 var axios = require('axios');
-var token = ""
+var token = '...'
+
 var config = {
   method: 'get',
-  url: 'http://orcadefi.com/api/v1/realtime/all',
+  url: 'http://orcadefi.com/api/v1/is-loggedin',
   headers: {
-    'Authorization': 'Bearer ' + token
-  }
+    'Authorization': 'Bearer ' + token,
+    'Content-Type': 'text/plain'
+  },
 };
 
 axios(config)
