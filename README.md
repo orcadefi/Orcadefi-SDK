@@ -1,5 +1,5 @@
 # Orcadefi-SDK
-![OrcaDeFI](https://orcadefi.github.io/assets/images/bg-orca-61c0accc9bc1e442c046cf0707d3e7b9.png)
+![OrcaDeFI](https://github.com/orcadefi/orcadefi.github.io/blob/master/img/bg-orca.png)
 
 A simple Javascript SDK to use the orcadefi platform
 
