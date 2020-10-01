@@ -17,7 +17,7 @@ Orca DeFi uses an API for show the real-time data of APR oracles of lend/borrow 
 
 All routes are use the /api/v1/
 
-**login**
+### **Login**
 
 Method: *POST*
 ```
@@ -39,7 +39,7 @@ Response | Description |
 token    | The key to request all data in the Orca DeFI API with expiration of 72 hours| 
 refresh  | The key to refresh the session when the token expires |
 
-**refreshToken**
+### **Refresh Token**
 
 Method: *POST*
 ```
@@ -61,7 +61,7 @@ Response | Description |
 token    | New key to request all data in the Orca DeFI API with expiration of 72 hours| 
 refresh  | New key to refresh the session when the token expires |
 
-**getAllData**
+### **Get all data**
 
 Method: *GET*
 ```
@@ -85,6 +85,90 @@ CompoundBorrow | All pairs data from Borrow % APR of the Compound platform |
 CompoundLend  | All pairs data from Lend % APR of the Compound platform |
 DydxBorrow | All pairs data from Borrow % APR of the Dydx platform | 
 DydxLend  | All pairs data from Lend % APR of the Dydx platform |
+FulcrumBorrow | All pairs data from Borrow % APR of the Fulcrum platform | 
+FulcrumBorrowLend  | All pairs data from Lend % APR of the Fulcrum platform |
+
+### **Get Aave all data**
+
+Method: *GET*
+```
+http://orcadefi.comapi/v1/realtime/aave
+```
+Retrieves information from all pairs and platforms in real time by organizing information by platform
+
+Header parameters:
+
+Parameter | Description |
+----------| ----------- |
+Authorization | The key to request all data in the Orca DeFI API with expiration of 72 hours |
+
+Response data:
+
+Response | Description |
+-------- | ----------- |
+AaveBorrow | All pairs data from Borrow % APR of the Aave platform | 
+AaveLend  | All pairs data from Lend % APR of the Aave platform |
+
+### **Get Compound all data**
+
+Method: *GET*
+```
+http://orcadefi.comapi/v1/realtime/compound
+```
+Retrieves information from all pairs and platforms in real time by organizing information by platform
+
+Header parameters:
+
+Parameter | Description |
+----------| ----------- |
+Authorization | The key to request all data in the Orca DeFI API with expiration of 72 hours |
+
+Response data:
+
+Response | Description |
+-------- | ----------- |
+CompoundBorrow | All pairs data from Borrow % APR of the Compound platform | 
+CompoundLend  | All pairs data from Lend % APR of the Compound platform |
+
+### **Get Dydx all data**
+
+Method: *GET*
+```
+http://orcadefi.comapi/v1/realtime/dydx
+```
+Retrieves information from all pairs and platforms in real time by organizing information by platform
+
+Header parameters:
+
+Parameter | Description |
+----------| ----------- |
+Authorization | The key to request all data in the Orca DeFI API with expiration of 72 hours |
+
+Response data:
+
+Response | Description |
+-------- | ----------- |
+DydxBorrow | All pairs data from Borrow % APR of the Dydx platform | 
+DydxLend  | All pairs data from Lend % APR of the Dydx platform |
+
+### **Get Fulcrum all data**
+
+Method: *GET*
+```
+http://orcadefi.comapi/v1/realtime/fulcrum
+```
+Retrieves information from all pairs and platforms in real time by organizing information by platform
+
+Header parameters:
+
+Parameter | Description |
+----------| ----------- |
+Authorization | The key to request all data in the Orca DeFI API with expiration of 72 hours |
+
+Response data:
+
+Response | Description |
+-------- | ----------- |
 FulcrumBorrow | All pairs data from Borrow % APR of the Fulcrum platform | 
 FulcrumBorrowLend  | All pairs data from Lend % APR of the Fulcrum platform |
 
