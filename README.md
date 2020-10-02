@@ -172,3 +172,115 @@ Response | Description |
 FulcrumBorrow | All pairs data from Borrow % APR of the Fulcrum platform | 
 FulcrumBorrowLend  | All pairs data from Lend % APR of the Fulcrum platform |
 
+### **Get Aave pair data**
+
+Method: *GET*
+```
+http://orcadefi.comapi/v1/realtime/aave/lend/
+http://orcadefi.comapi/v1/realtime/aave/borrow/
+```
+Retrieves information from one pair in real time by platform
+
+Header parameters:
+
+Parameter | Description |
+----------| ----------- |
+Authorization | The key to request all data in the Orca DeFI API with expiration of 72 hours |
+
+Request parameters:
+
+Parameter | Description |
+----------| ----------- |
+pair | The pair of the Aave platform |
+
+
+Response data:
+
+Response | Description |
+-------- | ----------- |
+Pair | Pair lend/borrow data of the Aave platform | 
+
+### **Get Compound pair data**
+
+Method: *GET*
+```
+http://orcadefi.comapi/v1/realtime/compound/lend/
+http://orcadefi.comapi/v1/realtime/compound/borrow/
+```
+Retrieves information from one pair in real time by platform
+
+Header parameters:
+
+Parameter | Description |
+----------| ----------- |
+Authorization | The key to request all data in the Orca DeFI API with expiration of 72 hours |
+
+Request parameters:
+
+Parameter | Description |
+----------| ----------- |
+pair | The pair of the Compound platform |
+
+
+Response data:
+
+Response | Description |
+-------- | ----------- |
+Pair | Pair lend/borrow data of the Compound platform | 
+
+### **Get Dydx pair data**
+
+Method: *GET*
+```
+http://orcadefi.comapi/v1/realtime/dydx/lend/
+http://orcadefi.comapi/v1/realtime/dydx/borrow/
+```
+Retrieves information from one pair in real time by platform
+
+Header parameters:
+
+Parameter | Description |
+----------| ----------- |
+Authorization | The key to request all data in the Orca DeFI API with expiration of 72 hours |
+
+Request parameters:
+
+Parameter | Description |
+----------| ----------- |
+pair | The pair of the Dydx platform |
+
+
+Response data:
+
+Response | Description |
+-------- | ----------- |
+Pair | Pair lend/borrow data of the Dydx platform | 
+
+### **Get Fulcrum pair data**
+
+Method: *GET*
+```
+http://orcadefi.comapi/v1/realtime/fulcrum/lend/
+http://orcadefi.comapi/v1/realtime/fulcrum/borrow/
+```
+Retrieves information from one pair in real time by platform
+
+Header parameters:
+
+Parameter | Description |
+----------| ----------- |
+Authorization | The key to request all data in the Orca DeFI API with expiration of 72 hours |
+
+Request parameters:
+
+Parameter | Description |
+----------| ----------- |
+pair | The pair of the Fulcrum platform |
+
+
+Response data:
+
+Response | Description |
+-------- | ----------- |
+Pair | Pair lend/borrow data of the Fulcrum platform | 
+
