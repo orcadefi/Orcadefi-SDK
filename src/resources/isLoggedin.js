@@ -1,19 +1,21 @@
 var axios = require('axios');
-var token = '...'
 
-var config = {
-  method: 'get',
-  url: 'http://orcadefi.com/api/v1/is-loggedin',
-  headers: {
-    'Authorization': 'Bearer ' + token,
-    'Content-Type': 'text/plain'
-  },
-};
+async function isLoggedin(token){
+    var config = {
+      method: 'get',
+      url: 'http://orcadefi.com/api/v1/is-loggedin',
+      headers: {
+        'Authorization': 'Bearer ' + token,
+        'Content-Type': 'text/plain'
+      },
+    };
 
-axios(config)
-.then(function (response) {
-  console.log(JSON.stringify(response.data));
-})
-.catch(function (error) {
-  console.log(error);
-});
+    axios(config)
+    .then(function (response) {
+      console.log(JSON.stringify(response.data));
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+}
+

@@ -1,5 +1,6 @@
 var axios = require('axios');
-var token = ""
+
+async function getAllData(token){
 var config = {
   method: 'get',
   url: 'http://orcadefi.com/api/v1/realtime/all',
@@ -9,9 +10,10 @@ var config = {
 };
 
 axios(config)
-.then(function (response) {
-  console.log(JSON.stringify(response.data));
-})
-.catch(function (error) {
-  console.log(error);
-});
+    .then(function (response) {
+      console.log(JSON.stringify(response.data));
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+}
