@@ -39,28 +39,6 @@ Response | Description |
 token    | The key to request all data in the Orca DeFI API with expiration of 72 hours| 
 refresh  | The key to refresh the session when the token expires |
 
-### **Refresh Token**
-
-Method: *POST*
-```
-http://orcadefi.com/api/v1/refresh
-```
-Generates a new token when the token expires in the 72 hours that is the duration.
-
-JSON parameters:
-
-Parameter | Description |
-----------| ----------- |
-refresh_token | The key to refresh the session when the token expires retrieved from login request |
-
-
-Response data:
-
-Response | Description |
--------- | ----------- |
-token    | New key to request all data in the Orca DeFI API with expiration of 72 hours| 
-refresh  | New key to refresh the session when the token expires |
-
 ### **Get all data**
 
 Method: *GET*
