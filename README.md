@@ -17,28 +17,6 @@ Orca DeFi uses an API for show the real-time data of APR oracles of lend/borrow 
 
 All routes are use the /api/v1/
 
-### **Login**
-
-Method: *POST*
-```
-http://orcadefi.com/api/v1/login
-```
-Generates a token for access to all routes that need authorization
-
-Request parameters:
-
-Parameter | Description |
-----------| ----------- |
-username | The username of your account of Orca DeFi platform |
-password | Your password of your account of Orca DeFi platform |
-
-Response data:
-
-Response | Description |
--------- | ----------- |
-token    | The key to request all data in the Orca DeFI API with expiration of 72 hours| 
-refresh  | The key to refresh the session when the token expires |
-
 ### **Get all data**
 
 Method: *GET*
@@ -47,11 +25,11 @@ http://orcadefi.comapi/v1/realtime/all
 ```
 Retrieves information from all pairs and platforms in real time by organizing information by platform
 
-Header parameters:
+Request parameters:
 
 Parameter | Description |
 ----------| ----------- |
-Authorization | The key to request all data in the Orca DeFI API with expiration of 72 hours |
+token | The key to request all data in the Orca DeFI API with expiration of 72 hours |
 
 Response data:
 
@@ -74,11 +52,11 @@ http://orcadefi.comapi/v1/realtime/aave
 ```
 Retrieves information from all pairs and platforms in real time by organizing information by platform
 
-Header parameters:
+Request parameters:
 
 Parameter | Description |
 ----------| ----------- |
-Authorization | The key to request all data in the Orca DeFI API with expiration of 72 hours |
+token | The key to request all data in the Orca DeFI API with expiration of 72 hours |
 
 Response data:
 
@@ -95,11 +73,11 @@ http://orcadefi.comapi/v1/realtime/compound
 ```
 Retrieves information from all pairs and platforms in real time by organizing information by platform
 
-Header parameters:
+Request parameters:
 
 Parameter | Description |
 ----------| ----------- |
-Authorization | The key to request all data in the Orca DeFI API with expiration of 72 hours |
+token | The key to request all data in the Orca DeFI API with expiration of 72 hours |
 
 Response data:
 
@@ -116,11 +94,11 @@ http://orcadefi.comapi/v1/realtime/dydx
 ```
 Retrieves information from all pairs and platforms in real time by organizing information by platform
 
-Header parameters:
+Request parameters:
 
 Parameter | Description |
 ----------| ----------- |
-Authorization | The key to request all data in the Orca DeFI API with expiration of 72 hours |
+token | The key to request all data in the Orca DeFI API with expiration of 72 hours |
 
 Response data:
 
@@ -137,13 +115,13 @@ http://orcadefi.comapi/v1/realtime/fulcrum
 ```
 Retrieves information from all pairs and platforms in real time by organizing information by platform
 
-Header parameters:
+Request parameters:
 
 Parameter | Description |
 ----------| ----------- |
-Authorization | The key to request all data in the Orca DeFI API with expiration of 72 hours |
+token | The key to request all data in the Orca DeFI API with expiration of 72 hours |
 
-Response data:
+Request data:
 
 Response | Description |
 -------- | ----------- |
@@ -159,11 +137,11 @@ http://orcadefi.comapi/v1/realtime/aave/borrow/
 ```
 Retrieves information from one pair in real time by platform
 
-Header parameters:
+Request parameters:
 
 Parameter | Description |
 ----------| ----------- |
-Authorization | The key to request all data in the Orca DeFI API with expiration of 72 hours |
+token | The key to request all data in the Orca DeFI API with expiration of 72 hours |
 
 Request parameters:
 
@@ -172,7 +150,7 @@ Parameter | Description |
 pair | The pair of the Aave platform |
 
 
-Response data:
+Request data:
 
 Response | Description |
 -------- | ----------- |
@@ -187,11 +165,11 @@ http://orcadefi.comapi/v1/realtime/compound/borrow/
 ```
 Retrieves information from one pair in real time by platform
 
-Header parameters:
+Request parameters:
 
 Parameter | Description |
 ----------| ----------- |
-Authorization | The key to request all data in the Orca DeFI API with expiration of 72 hours |
+token | The key to request all data in the Orca DeFI API with expiration of 72 hours |
 
 Request parameters:
 
@@ -215,11 +193,11 @@ http://orcadefi.comapi/v1/realtime/dydx/borrow/
 ```
 Retrieves information from one pair in real time by platform
 
-Header parameters:
+Request parameters:
 
 Parameter | Description |
 ----------| ----------- |
-Authorization | The key to request all data in the Orca DeFI API with expiration of 72 hours |
+token | The key to request all data in the Orca DeFI API with expiration of 72 hours |
 
 Request parameters:
 
@@ -243,11 +221,11 @@ http://orcadefi.comapi/v1/realtime/fulcrum/borrow/
 ```
 Retrieves information from one pair in real time by platform
 
-Header parameters:
+Request parameters:
 
 Parameter | Description |
 ----------| ----------- |
-Authorization | The key to request all data in the Orca DeFI API with expiration of 72 hours |
+token | The key to request all data in the Orca DeFI API with expiration of 72 hours |
 
 Request parameters:
 
@@ -262,3 +240,33 @@ Response | Description |
 -------- | ----------- |
 Pair | Pair lend/borrow data of the Fulcrum platform | 
 
+### **Get Uniswap all pair price data**
+
+Method: *GET*
+```
+http://orcadefi.comapi/v1/realtime/price
+```
+Retrieves price data from all pairs in Uniswap platform in real time by organizing information by pair.
+
+Request parameters:
+
+Parameter | Description |
+----------| ----------- |
+token | The key to request all data in the Orca DeFI API with expiration of 72 hours |
+
+Response data:
+
+Response | Description |
+-------- | ----------- |
+PairPrices | All pairs data from Uniswap in ETH value | 
+
+### **Errors**
+
+Method: *GET*
+
+Response errors:
+
+message | Description |
+-------- | ----------- |
+Unauthorized | Invalid token or expired token | 
+Not Found | Invalid route or malformed route | 
