@@ -3,10 +3,7 @@ var axios = require('axios');
 async function getAllData(token){
 var config = {
   method: 'get',
-  url: 'http://orcadefi.com/api/v1/realtime/all',
-  headers: {
-    'Authorization': 'Bearer ' + token
-  }
+  url: 'http://orcadefi.com/api/v1/realtime/all?token=' + token,
 };
 
 axios(config)

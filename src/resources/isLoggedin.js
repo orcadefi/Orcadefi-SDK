@@ -3,11 +3,7 @@ var axios = require('axios');
 async function isLoggedin(token){
     var config = {
       method: 'get',
-      url: 'http://orcadefi.com/api/v1/is-loggedin',
-      headers: {
-        'Authorization': 'Bearer ' + token,
-        'Content-Type': 'text/plain'
-      },
+      url: 'http://orcadefi.com/api/v1/is-loggedin?token=' + token
     };
 
     axios(config)

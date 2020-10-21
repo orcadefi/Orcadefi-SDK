@@ -1,33 +1,21 @@
 var axios = require('axios');
 
-function getBorrowPlatfrom(platform){
+function getBorrowPlatfrom(token,platform){
     var aave = {
       method: 'get',
-      url: 'http://orcadefi.com/api/v1/realtime/aave/borrow',
-      headers: {
-        'Authorization': 'Bearer ' + token
-      }
+      url: 'http://orcadefi.com/api/v1/realtime/aave/borrow?token=' + token
     };
     var compound = {
       method: 'get',
-      url: 'http://orcadefi.com/api/v1/realtime/compound/borrow',
-      headers: {
-        'Authorization': 'Bearer ' + token
-      }
+      url: 'http://orcadefi.com/api/v1/realtime/compound/borrow?token=' + token
     };
     var dydx = {
       method: 'get',
-      url: 'http://orcadefi.com/api/v1/realtime/dydx/borrow',
-      headers: {
-        'Authorization': 'Bearer ' + token
-      }
+      url: 'http://orcadefi.com/api/v1/realtime/dydx/borrow?token=' + token
     };
     var fulcrum = {
       method: 'get',
-      url: 'http://orcadefi.com/api/v1/realtime/fulcrum/borrow',
-      headers: {
-        'Authorization': 'Bearer ' + token
-      }
+      url: 'http://orcadefi.com/api/v1/realtime/fulcrum/borrow?token=' + token
     };
 
     var config;
