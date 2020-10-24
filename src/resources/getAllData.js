@@ -17,7 +17,7 @@ axios(config)
 async function getAllDataPublic(token){
 var config = {
   method: 'get',
-  url: 'http://orcadefi.com/api/v1/realtime/all'
+  url: 'http://orcadefi.com/api/v1/public/all'
 };
 
 axios(config)

@@ -18,7 +18,7 @@ async function getPricePairs(token) {
 async function getPricePairsPublic(token) {
     var config = {
         method: 'post',
-        url: 'http://orcadefi.com/api/v1/realtime/price'
+        url: 'http://orcadefi.com/api/v1/public/price'
     };
 
     axios(config)

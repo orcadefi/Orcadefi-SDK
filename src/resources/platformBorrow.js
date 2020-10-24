@@ -39,19 +39,19 @@ function getBorrowPlatform(token,platform){
 function getBorrowPlatformPublic(token,platform){
     var aave = {
       method: 'get',
-      url: 'http://orcadefi.com/api/v1/realtime/aave/borrow'
+      url: 'http://orcadefi.com/api/v1/public/aave/borrow'
     };
     var compound = {
       method: 'get',
-      url: 'http://orcadefi.com/api/v1/realtime/compound/borrow'
+      url: 'http://orcadefi.com/api/v1/public/compound/borrow'
     };
     var dydx = {
       method: 'get',
-      url: 'http://orcadefi.com/api/v1/realtime/dydx/borrow'
+      url: 'http://orcadefi.com/api/v1/public/dydx/borrow'
     };
     var fulcrum = {
       method: 'get',
-      url: 'http://orcadefi.com/api/v1/realtime/fulcrum/borrow'
+      url: 'http://orcadefi.com/api/v1/public/fulcrum/borrow'
     };
 
     var config;

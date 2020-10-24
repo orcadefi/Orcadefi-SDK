@@ -39,19 +39,19 @@ async function getLendPlatform(platform,token){
 async function getLendPlatformPublic(platform,token){
     var aave = {
       method: 'get',
-      url: 'http://orcadefi.com/api/v1/realtime/aave/lend'
+      url: 'http://orcadefi.com/api/v1/public/aave/lend'
     };
     var compound = {
       method: 'get',
-      url: 'http://orcadefi.com/api/v1/realtime/compound/lend'
+      url: 'http://orcadefi.com/api/v1/public/compound/lend'
     };
     var dydx = {
       method: 'get',
-      url: 'http://orcadefi.com/api/v1/realtime/dydx/lend'
+      url: 'http://orcadefi.com/api/v1/public/dydx/lend'
     };
     var fulcrum = {
       method: 'get',
-      url: 'http://orcadefi.com/api/v1/realtime/fulcrum/lend'
+      url: 'http://orcadefi.com/api/v1/public/fulcrum/lend'
     };
     var config;
     if (platform === 1) {
