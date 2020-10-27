@@ -321,3 +321,4 @@ message | Description |
 -------- | ----------- |
 Unauthorized | Invalid token or expired token | 
 Not Found | Invalid route or malformed route | 
+Method Not Allowed | Invalid http method or invalid request method | 
