@@ -20,6 +20,8 @@ All routes are use the /api/v1/
 ### **Get all data**
 
 Method: *GET*
+
+#### Realtime
 ```
 http://orcadefi.com/api/v1/realtime/all
 ```
@@ -31,6 +33,7 @@ Parameter | Description |
 ----------| ----------- |
 token | The key to request all data in the Orca DeFI API with expiration of 72 hours |
 
+#### Public
 ```
 http://orcadefi.com/api/v1/public/all
 ```
@@ -52,6 +55,9 @@ FulcrumBorrowLend  | All pairs data from Lend % APR of the Fulcrum platform |
 ### **Get Aave all data**
 
 Method: *GET*
+
+#### Realtime
+
 ```
 http://orcadefi.com/api/v1/realtime/aave
 ```
@@ -62,6 +68,8 @@ Request parameters:
 Parameter | Description |
 ----------| ----------- |
 token | The key to request all data in the Orca DeFI API with expiration of 72 hours |
+
+#### Public
 
 ```
 http://orcadefi.com/api/v1/public/aave
@@ -78,6 +86,9 @@ AaveLend  | All pairs data from Lend % APR of the Aave platform |
 ### **Get Compound all data**
 
 Method: *GET*
+
+#### Realtime
+
 ```
 http://orcadefi.com/api/v1/realtime/compound
 ```
@@ -88,6 +99,8 @@ Request parameters:
 Parameter | Description |
 ----------| ----------- |
 token | The key to request all data in the Orca DeFI API with expiration of 72 hours |
+
+#### Public
 
 ```
 http://orcadefi.com/api/v1/public/aave
@@ -104,6 +117,9 @@ CompoundLend  | All pairs data from Lend % APR of the Compound platform |
 ### **Get Dydx all data**
 
 Method: *GET*
+
+#### Realtime
+
 ```
 http://orcadefi.com/api/v1/realtime/dydx
 ```
@@ -114,6 +130,8 @@ Request parameters:
 Parameter | Description |
 ----------| ----------- |
 token | The key to request all data in the Orca DeFI API with expiration of 72 hours |
+
+#### Public
 
 ```
 http://orcadefi.com/api/v1/public/dydx
@@ -130,6 +148,9 @@ DydxLend  | All pairs data from Lend % APR of the Dydx platform |
 ### **Get Fulcrum all data**
 
 Method: *GET*
+
+#### Realtime
+
 ```
 http://orcadefi.com/api/v1/realtime/fulcrum
 ```
@@ -140,6 +161,8 @@ Request parameters:
 Parameter | Description |
 ----------| ----------- |
 token | The key to request all data in the Orca DeFI API with expiration of 72 hours |
+
+#### Public
 
 ```
 http://orcadefi.com/api/v1/public/fulcrum
@@ -156,6 +179,9 @@ FulcrumBorrowLend  | All pairs data from Lend % APR of the Fulcrum platform |
 ### **Get Aave pair data**
 
 Method: *GET*
+
+#### Realtime
+
 ```
 http://orcadefi.com/api/v1/realtime/aave/lend/
 http://orcadefi.com/api/v1/realtime/aave/borrow/
@@ -167,6 +193,8 @@ Request parameters:
 Parameter | Description |
 ----------| ----------- |
 token | The key to request all data in the Orca DeFI API with expiration of 72 hours |
+
+#### Public
 
 ```
 http://orcadefi.com/api/v1/public/aave/lend/
@@ -190,6 +218,9 @@ Pair | Pair lend/borrow data of the Aave platform |
 ### **Get Compound pair data**
 
 Method: *GET*
+
+#### Realtime
+
 ```
 http://orcadefi.com/api/v1/realtime/compound/lend/
 http://orcadefi.com/api/v1/realtime/compound/borrow/
@@ -208,6 +239,8 @@ Parameter | Description |
 ----------| ----------- |
 pair | The pair of the Compound platform |
 
+#### Public
+
 ```
 http://orcadefi.com/api/v1/public/compound/lend/
 http://orcadefi.com/api/v1/public/compound/borrow/
@@ -223,6 +256,9 @@ Pair | Pair lend/borrow data of the Compound platform |
 ### **Get Dydx pair data**
 
 Method: *GET*
+
+#### Realtime
+
 ```
 http://orcadefi.com/api/v1/realtime/dydx/lend/
 http://orcadefi.com/api/v1/realtime/dydx/borrow/
@@ -241,6 +277,8 @@ Parameter | Description |
 ----------| ----------- |
 pair | The pair of the Dydx platform |
 
+#### Public
+
 ```
 http://orcadefi.com/api/v1/public/dydx/lend/
 http://orcadefi.com/api/v1/public/dydx/borrow/
@@ -256,6 +294,9 @@ Pair | Pair lend/borrow data of the Dydx platform |
 ### **Get Fulcrum pair data**
 
 Method: *GET*
+
+#### Realtime
+
 ```
 http://orcadefi.com/api/v1/realtime/fulcrum/lend/
 http://orcadefi.com/api/v1/realtime/fulcrum/borrow/
@@ -274,6 +315,8 @@ Parameter | Description |
 ----------| ----------- |
 pair | The pair of the Fulcrum platform |
 
+#### Public
+
 ```
 http://orcadefi.com/api/v1/public/fulcrum/lend/
 http://orcadefi.com/api/v1/public/fulcrum/borrow/
@@ -289,6 +332,9 @@ Pair | Pair lend/borrow data of the Fulcrum platform |
 ### **Get Uniswap all pair price data**
 
 Method: *GET*
+
+#### Realtime
+
 ```
 http://orcadefi.com/api/v1/realtime/price
 ```
@@ -299,6 +345,8 @@ Request parameters:
 Parameter | Description |
 ----------| ----------- |
 token | The key to request all data in the Orca DeFI API with expiration of 72 hours |
+
+#### Public
 
 ```
 http://orcadefi.com/api/v1/public/price
