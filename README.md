@@ -359,6 +359,38 @@ Response | Description |
 -------- | ----------- |
 PairPrices | All pairs data from Uniswap in ETH value | 
 
+### **Get Graph pair day history data**
+
+Method: *GET*
+
+#### Realtime
+
+```
+http://orcadefi.com/api/v1/realtime/graph
+```
+Retrieves the graph data from all pairs in real time by organizing information by pair.
+
+Request parameters:
+
+Parameter | Description |
+----------| ----------- |
+token | The key to request all data in the Orca DeFI API with expiration of 72 hours |
+
+#### Public
+
+```
+http://orcadefi.com/api/v1/public/graph
+```
+Retrieves 15 minutes ago graph data from all pairs in platform by organizing information by pair.
+
+Response data:
+
+Response | Description |
+-------- | ----------- |
+GraphData | All pairs graph data from OrcaDeFi in % | 
+
+
+
 ### **Errors**
 
 Method: *GET*
