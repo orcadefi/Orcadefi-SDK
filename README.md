@@ -366,9 +366,12 @@ Method: *GET*
 #### Realtime
 
 ```
-http://orcadefi.com/api/v1/realtime/graph
+http://orcadefi.com/api/v1/realtime/graph/lend/aave
+http://orcadefi.com/api/v1/realtime/graph/lend/compound
+http://orcadefi.com/api/v1/realtime/graph/lend/dydx
+http://orcadefi.com/api/v1/realtime/graph/lend/fulcrum
 ```
-Retrieves the graph data from all pairs in real time by organizing information by pair.
+Retrieves the graph data from each platform pairs in real time by organizing information by pair.
 
 Request parameters:
 
@@ -379,15 +382,18 @@ token | The key to request all data in the Orca DeFI API with expiration of 72 h
 #### Public
 
 ```
-http://orcadefi.com/api/v1/public/graph
+http://orcadefi.com/api/v1/public/graph/lend/aave
+http://orcadefi.com/api/v1/public/graph/lend/compound
+http://orcadefi.com/api/v1/public/graph/lend/dydx
+http://orcadefi.com/api/v1/public/graph/lend/fulcrum
 ```
-Retrieves 15 minutes ago graph data from all pairs in platform by organizing information by pair.
+Retrieves 15 minutes ago graph data from each platform lend data in platform by organizing information by pair.
 
 Response data:
 
 Response | Description |
 -------- | ----------- |
-GraphData | All pairs graph data from OrcaDeFi in % | 
+GraphData | All pairs of each platform in lend graph data from OrcaDeFi in % | 
 
 
 
