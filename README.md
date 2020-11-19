@@ -389,7 +389,110 @@ Response | Description |
 -------- | ----------- |
 GraphData | All pairs graph data from OrcaDeFi in % | 
 
+### **Get pair Lend APR of the last 7 days history data**
 
+Method: *GET*
+
+#### Realtime
+
+```
+http://orcadefi.com/api/v1/realtime/lend/week/
+```
+Retrieves minute intervals for graph data from a pair in real time by organizing information by time.
+
+Request parameters:
+
+Parameter | Description |
+----------| ----------- |
+token | The key to request all data in the Orca DeFI API with expiration of 72 hours |
+pair | The symbol of a pair to retrieve the information |
+
+#### Public
+
+```
+http://orcadefi.com/api/v1/public/lend/week/
+```
+Retrieves hour intervals for graph data from a pair in platform by organizing information by time.
+
+Parameter | Description |
+----------| ----------- |
+pair | The symbol of a pair to retrieve the information |
+
+Response data:
+
+Response | Description |
+-------- | ----------- |
+GraphData | Last week history data of a pair for graph data from OrcaDeFi in % | 
+
+### **Get pair Lend APR of the last 30 days history data**
+
+Method: *GET*
+
+#### Realtime
+
+```
+http://orcadefi.com/api/v1/realtime/lend/month/
+```
+Retrieves hour intervals for graph data from a pair in real time by organizing information by time.
+
+Request parameters:
+
+Parameter | Description |
+----------| ----------- |
+token | The key to request all data in the Orca DeFI API with expiration of 72 hours |
+pair | The symbol of a pair to retrieve the information |
+
+#### Public
+
+```
+http://orcadefi.com/api/v1/public/lend/month/
+```
+Retrieves hour intervals for graph data from a pair in platform by organizing information by time.
+
+Parameter | Description |
+----------| ----------- |
+pair | The symbol of a pair to retrieve the information |
+
+Response data:
+
+Response | Description |
+-------- | ----------- |
+GraphData | Last month history data of a pair for graph data from OrcaDeFi in % | 
+
+### **Get pair Lend APR all history data**
+
+Method: *GET*
+
+#### Realtime
+
+```
+http://orcadefi.com/api/v1/realtime/lend/all/
+```
+Retrieves 12 hours intervals for graph data from a pair in real time by organizing information by time.
+
+Request parameters:
+
+Parameter | Description |
+----------| ----------- |
+token | The key to request all data in the Orca DeFI API with expiration of 72 hours |
+pair | The symbol of a pair to retrieve the information |
+
+#### Public
+
+```
+http://orcadefi.com/api/v1/public/lend/all/
+```
+Retrieves day intervals for graph data from a pair in platform by organizing information by time.
+
+Parameter | Description |
+----------| ----------- |
+pair | The symbol of a pair to retrieve the information |
+
+Response data:
+
+Response | Description |
+-------- | ----------- |
+GraphData | All history of a pair for graph data from OrcaDeFi in % | 
 
 ### **Errors**
 
