@@ -3,7 +3,7 @@ var axios = require('axios');
 function getAaveLendGraph(){
   var config = {
     method: 'get',
-    url: 'http://orcadefi.com/api/v1/public/graoh/lend/aave',
+    url: 'http://orcadefi.com/api/v1/public/graph/lend/aave',
   };
 
   axios(config)
@@ -17,7 +17,7 @@ function getAaveLendGraph(){
 function getAaveBorrowGraph(){
   var config = {
     method: 'get',
-    url: 'http://orcadefi.com/api/v1/public/graoh/borrow/aave',
+    url: 'http://orcadefi.com/api/v1/public/graph/borrow/aave',
   };
 
   axios(config)
@@ -31,7 +31,7 @@ function getAaveBorrowGraph(){
 function getCompoundBorrowGraph(){
   var config = {
     method: 'get',
-    url: 'http://orcadefi.com/api/v1/public/graoh/borrow/compound',
+    url: 'http://orcadefi.com/api/v1/public/graph/borrow/compound',
   };
 
   axios(config)
@@ -45,7 +45,7 @@ function getCompoundBorrowGraph(){
 function getCompoundLendGraph(){
   var config = {
     method: 'get',
-    url: 'http://orcadefi.com/api/v1/public/graoh/lend/compound',
+    url: 'http://orcadefi.com/api/v1/public/graph/lend/compound',
   };
 
   axios(config)
@@ -59,7 +59,7 @@ function getCompoundLendGraph(){
 function getDydxBorrowGraph(){
   var config = {
     method: 'get',
-    url: 'http://orcadefi.com/api/v1/public/graoh/borrow/dydx',
+    url: 'http://orcadefi.com/api/v1/public/graph/borrow/dydx',
   };
 
   axios(config)
@@ -73,7 +73,7 @@ function getDydxBorrowGraph(){
 function getDydxLendGraph(){
   var config = {
     method: 'get',
-    url: 'http://orcadefi.com/api/v1/public/graoh/lend/dydx',
+    url: 'http://orcadefi.com/api/v1/public/graph/lend/dydx',
   };
 
   axios(config)
@@ -87,7 +87,7 @@ function getDydxLendGraph(){
 function getFulcrumLendGraph(){
   var config = {
     method: 'get',
-    url: 'http://orcadefi.com/api/v1/public/graoh/lend/fulcrum',
+    url: 'http://orcadefi.com/api/v1/public/graph/lend/fulcrum',
   };
 
   axios(config)
@@ -101,7 +101,7 @@ function getFulcrumLendGraph(){
 function getFulcrumBorrowGraph(){
   var config = {
     method: 'get',
-    url: 'http://orcadefi.com/api/v1/public/graoh/borrow/fulcrum',
+    url: 'http://orcadefi.com/api/v1/public/graph/borrow/fulcrum',
   };
 
   axios(config)
