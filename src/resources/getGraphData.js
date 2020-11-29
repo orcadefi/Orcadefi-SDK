@@ -14,6 +14,48 @@ function getAaveLendGraph() {
             console.log(error);
         });
 }
+function getWeekLendGraph() {
+    var config = {
+        method: 'get',
+        url: 'http://orcadefi.com/api/v1/public/graph/week/lend',
+    };
+
+    axios(config)
+        .then(function (response) {
+            return JSON.stringify(response.data);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+}
+function getMonthLendGraph() {
+    var config = {
+        method: 'get',
+        url: 'http://orcadefi.com/api/v1/public/graph/month/lend',
+    };
+
+    axios(config)
+        .then(function (response) {
+            return JSON.stringify(response.data);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+}
+function getAllLendGraph() {
+    var config = {
+        method: 'get',
+        url: 'http://orcadefi.com/api/v1/public/graph/all/lend',
+    };
+
+    axios(config)
+        .then(function (response) {
+            return JSON.stringify(response.data);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+}
 
 function getAaveBorrowGraph() {
     var config = {
