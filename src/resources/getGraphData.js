@@ -1,9 +1,9 @@
 var axios = require('axios');
 
-function getAaveLendGraph(pair) {
+function getAaveLendGraph(pair1,pair2,pair3,pair4) {
     var config = {
         method: 'get',
-        url: 'http://orcadefi.com/api/v1/public/graph/lend/aave/pair?=' + pair,
+        url: 'http://orcadefi.com/api/v1/public/graph/lend/aave/pair1?=' + pair1 + '&pair2=' + pair2 + '&pair2=' + pair3 + '&pair2=' + pair4,
     };
 
     axios(config)
@@ -14,10 +14,10 @@ function getAaveLendGraph(pair) {
             console.log(error);
         });
 }
-function getWeekLendGraph(pair) {
+function getWeekLendGraph(pair1,pair2,pair3,pair4) {
     var config = {
         method: 'get',
-        url: 'http://orcadefi.com/api/v1/public/graph/week/lend/pair?=' + pair,
+        url: 'http://orcadefi.com/api/v1/public/graph/week/lend/pair1?=' + pair1 + '&pair2=' + pair2 + '&pair2=' + pair3 + '&pair2=' + pair4,
     };
 
     axios(config)
@@ -28,10 +28,10 @@ function getWeekLendGraph(pair) {
             console.log(error);
         });
 }
-function getMonthLendGraph(pair) {
+function getMonthLendGraph(pair1,pair2,pair3,pair4) {
     var config = {
         method: 'get',
-        url: 'http://orcadefi.com/api/v1/public/graph/month/lend/pair?=' + pair,
+        url: 'http://orcadefi.com/api/v1/public/graph/month/lend/pair1?=' + pair1 + '&pair2=' + pair2 + '&pair2=' + pair3 + '&pair2=' + pair4,
     };
 
     axios(config)
