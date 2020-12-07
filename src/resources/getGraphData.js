@@ -42,10 +42,10 @@ function getMonthLendGraph(pair1,pair2,pair3,pair4) {
             console.log(error);
         });
 }
-function getAllLendGraph() {
+function getAllLendGraph(pair1,pair2,pair3,pair4) {
     var config = {
         method: 'get',
-        url: 'http://orcadefi.com/api/v1/public/graph/all/lend',
+        url: 'http://orcadefi.com/api/v1/public/graph/all/lend/pair1?=' + pair1 + '&pair2=' + pair2 + '&pair2=' + pair3 + '&pair2=' + pair4,
     };
 
     axios(config)
