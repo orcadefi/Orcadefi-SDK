@@ -1,5 +1,6 @@
 var axios = require('axios');
 
+//Verifies if the token is valid and have access to the Orca DeFi data.
 async function isLoggedIn(token){
     var config = {
       method: 'get',

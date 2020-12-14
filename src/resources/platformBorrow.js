@@ -1,5 +1,6 @@
 var axios = require('axios');
 
+//Retrieve Borrow data from platform selected in realtime.
 function getBorrowPlatform(token, platform) {
     var aave = {
         method: 'get',
@@ -40,6 +41,7 @@ function getBorrowPlatform(token, platform) {
         });
 }
 
+//Retrieve Borrow data from platform selected in public.
 function getBorrowPlatformPublic(token, platform) {
     var aave = {
         method: 'get',

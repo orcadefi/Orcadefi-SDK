@@ -1,5 +1,5 @@
 var axios = require('axios');
-
+//Retrieve all Aave Lend graph data of history.
 function getAaveLendGraph(pair1,pair2,pair3,pair4) {
     var config = {
         method: 'get',
@@ -14,6 +14,7 @@ function getAaveLendGraph(pair1,pair2,pair3,pair4) {
             console.log(error);
         });
 }
+//Retrieve week Aave Lend graph data of history.
 function getWeekLendGraph(pair1,pair2,pair3,pair4) {
     var config = {
         method: 'get',
@@ -28,6 +29,7 @@ function getWeekLendGraph(pair1,pair2,pair3,pair4) {
             console.log(error);
         });
 }
+//Retrieve month Aave Lend graph data of history.
 function getMonthLendGraph(pair1,pair2,pair3,pair4) {
     var config = {
         method: 'get',

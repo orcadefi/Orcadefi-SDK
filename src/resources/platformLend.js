@@ -1,5 +1,6 @@
 var axios = require('axios');
 
+//Retrieve Lend data from platform selected in realtime.
 async function getLendPlatform(platform,token){
     var aave = {
       method: 'get',
@@ -35,7 +36,7 @@ async function getLendPlatform(platform,token){
   console.log(error);
 });
 }
-
+//Retrieve Lend data from platform selected in public.
 async function getLendPlatformPublic(platform,token){
     var aave = {
       method: 'get',

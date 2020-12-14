@@ -1,5 +1,6 @@
 var axios = require('axios');
 
+//Returns all realtime data from the Orca DeFi platform.
 async function getAllData(token) {
     var config = {
         method: 'get',
@@ -15,6 +16,7 @@ async function getAllData(token) {
         });
 }
 
+//Returns all public data from the Orca DeFi platform.
 async function getAllDataPublic(token) {
     var config = {
         method: 'get',
