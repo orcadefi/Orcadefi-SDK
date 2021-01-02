@@ -1,7 +1,7 @@
 var axios = require('axios');
 
 //Returns all realtime data from the Orca DeFi platform.
-async function getAllData(token) {
+async function getRealtimeAllData(token) {
     var config = {
         method: 'get',
         url: 'http://orcadefi.com/api/v1/realtime/all?token=' + token,
@@ -17,7 +17,7 @@ async function getAllData(token) {
 }
 
 //Returns all public data from the Orca DeFi platform.
-async function getAllDataPublic(token) {
+async function getFreeAllDataPublic(token) {
     var config = {
         method: 'get',
         url: 'http://orcadefi.com/api/v1/public/all'
